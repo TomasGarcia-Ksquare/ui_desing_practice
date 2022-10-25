@@ -29,90 +29,109 @@ class Screen21 extends StatelessWidget {
         //color: Colors.black,
         child: Expanded(
           child: Container(
-            //color: Colors.red,
+            //color: Colors.orange,
             margin: EdgeInsets.only(left: 20, right: 20),
             child: Column(
               children: [
                 Container(
-                  width: double.infinity,
-                  margin: EdgeInsets.only(top: 10),
-                  height: 30,
-                  //color: Colors.green,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: sections.length,
-                      itemBuilder: (context, index){
-                        return Container(
+                    width: double.infinity,
+                    margin: EdgeInsets.only(top: 10),
+                    height: 30,
+                    //color: Colors.green,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Container(
                           width: 100,
-                          decoration: BoxDecoration(color: Colors.pink[200], borderRadius: BorderRadius.circular(10)),
-                          child: Center(child: Text(sections[index]['name'])),
+                          decoration: BoxDecoration(
+                              color: Color(0xfff4d3d2),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Center(child: Text("Trending")),
                           margin: EdgeInsets.only(right: 10),
-                        );
-                      }
-                  )
-                ),
+                        ),                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                              color: Color(0xfff4d3d2),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Center(child: Text("Popular")),
+                          margin: EdgeInsets.only(right: 10),
+                        ),                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                              color: Color(0xfff4d3d2),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Center(child: Text("Computers")),
+                          margin: EdgeInsets.only(right: 10),
+                        ),                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                              color: Color(0xfff4d3d2),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Center(child: Text("Mobiles")),
+                          margin: EdgeInsets.only(right: 10),
+                        )
+                      ],
+                    )),
                 Expanded(
                   child: Container(
                     //color: Colors.yellow,
                     child: ListView.builder(
-                      itemCount: items.length,
-                      itemBuilder: (context, index){
-                        return Container(
-                          color: Colors.grey[300],
-                          width: double.infinity,
-                          height: 115,
-                          padding: EdgeInsets.all(8),
-                          margin: EdgeInsets.only(top: 12),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                height: 80,
-                                width: 80,
-                                child: Image.network(
-                                  "https://photos5.appleinsider.com/gallery/50478-99486-AirPods-Pro-2-lede-xl.jpg",
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              SizedBox(width: 8),
-                              Expanded(
-                                child: Container(
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        items[index]['name'],
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18.0,
-                                        ),
-                                      ),
-                                      SizedBox(height: 4),
-                                      Text(
-                                        items[index]['time'],
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                      SizedBox(height: 4),
-                                      Text(
-                                        items[index]['price'],
-                                        style: TextStyle(
-                                            color: Colors.red,
-                                            fontSize: 20),
-                                      )
-                                    ],
+                        itemCount: items.length,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            color: Colors.grey[300],
+                            width: double.infinity,
+                            height: 115,
+                            padding: EdgeInsets.all(8),
+                            margin: EdgeInsets.only(top: 12),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Container(
+                                  height: 80,
+                                  width: 80,
+                                  child: Image.network(
+                                    "https://photos5.appleinsider.com/gallery/50478-99486-AirPods-Pro-2-lede-xl.jpg",
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
-                        );
-                      }
-                    ),
+                                SizedBox(width: 8),
+                                Expanded(
+                                  child: Container(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          items[index]['name'],
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18.0,
+                                          ),
+                                        ),
+                                        SizedBox(height: 4),
+                                        Text(
+                                          items[index]['time'],
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        SizedBox(height: 4),
+                                        Text(
+                                          items[index]['price'],
+                                          style: TextStyle(
+                                              color: Colors.orange, fontSize: 20),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          );
+                        }),
                   ),
                 )
               ],

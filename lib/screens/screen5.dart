@@ -13,7 +13,9 @@ class Screen5 extends StatelessWidget {
           child: Text(
             "Click Me",
             style: TextStyle(
-              fontSize: 25
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+              color: Color(0xff1169d7)
             ),
           ),
         ),

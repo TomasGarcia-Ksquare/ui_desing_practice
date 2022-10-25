@@ -1,82 +1,199 @@
-import 'dart:html';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen14 extends StatelessWidget {
   Screen14({super.key});
 
-  List names1 = [
-    "Facebook",
-    "Twitter",
-    "Instagram",
-    "YouTube",
-    "Share This App",
-    "Rate This App"
-  ];
-
-  List names = [
-    {
-      "txt": "Facebook",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png"
-    },
-    {
-      "txt": "Twitter",
-      "img": "https://cdn-icons-png.flaticon.com/512/889/889147.png"
-    },
-    {
-      "txt": "Instagram",
-      "img": "https://cdn-icons-png.flaticon.com/512/174/174855.png"
-    },
-    {
-      "txt": "YouTube",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
-    },
-    {
-      "txt": "Share This App",
-      "img": "https://cdn-icons-png.flaticon.com/512/786/786407.png"
-    },
-    {
-      "txt": "Rate This App",
-      "img": "https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-icon.png"
-    }
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          crossAxisSpacing: 1,
-          mainAxisSpacing: 1,
-          childAspectRatio: 1,
-        ),
-        itemCount: names.length,
-        itemBuilder: (context, index) {
-          return Container(
-            margin: EdgeInsets.all(20),
-            padding: EdgeInsets.all(12),
-            color: Colors.grey[200],
-            //child: Text(names[index]),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Container(
-                  child: Image.network(
-                  names[index]['img'],
-                  height: 50,
+                  width: 200,
+                  height: 200,
+                  decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(5)),
+                      color: Colors.grey[200]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.network(
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png",
+                        fit: BoxFit.fill,
+                        height: 50,
+                        width: 50,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      const Text(
+                        "Facebook",
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
-                  margin: EdgeInsets.all(20),
                 ),
-                Text(
-                  names[index]['txt'],
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                const SizedBox(
+                  width: 35,
+                ),
+                Container(
+                  width: 200,
+                  height: 200,
+                  decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(5)),
+                      color: Colors.grey[200]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.network(
+                        "https://cdn-icons-png.flaticon.com/512/889/889147.png",
+                        fit: BoxFit.fill,
+                        height: 50,
+                        width: 50,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      const Text(
+                        "Twitter",
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
-          );
-        },
+            const SizedBox(height: 35),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 200,
+                  height: 200,
+                  decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(5)),
+                      color: Colors.grey[200]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.network(
+                        "https://cdn-icons-png.flaticon.com/512/174/174855.png",
+                        fit: BoxFit.fill,
+                        height: 50,
+                        width: 50,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      const Text(
+                        "Instagram",
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 35,
+                ),
+                Container(
+                  width: 200,
+                  height: 200,
+                  decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(5)),
+                      color: Colors.grey[200]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.network(
+                        "https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png",
+                        fit: BoxFit.fill,
+                        height: 50,
+                        width: 50,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      const Text(
+                        "YouTube",
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 35),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 200,
+                  height: 200,
+                  decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(5)),
+                      color: Colors.grey[200]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.network(
+                        "https://cdn-icons-png.flaticon.com/512/786/786407.png",
+                        fit: BoxFit.fill,
+                        height: 50,
+                        width: 50,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      const Text(
+                        "Share This App",
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 35,
+                ),
+                Container(
+                  width: 200,
+                  height: 200,
+                  decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(5)),
+                      color: Colors.grey[200]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.network(
+                        "https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-icon.png",
+                        fit: BoxFit.fill,
+                        height: 50,
+                        width: 50,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      const Text(
+                        "Rate This App",
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

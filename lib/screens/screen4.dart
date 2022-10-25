@@ -13,7 +13,11 @@ class Screen4 extends StatelessWidget{
           width: 130,
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              primary: Colors.black
+              elevation: 0.0,
+              backgroundColor: Colors.black,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(0)
+              )
             ),
             onPressed: () {},
             child: Text(

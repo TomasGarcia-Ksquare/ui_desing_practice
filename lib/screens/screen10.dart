@@ -31,10 +31,15 @@ class Screen10 extends StatelessWidget {
                   margin: EdgeInsets.only(bottom: 20),
                   padding: EdgeInsets.only(left: 20, right: 20),
                   child: OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                        side: BorderSide(color: Colors.black),
+                        elevation: 0.0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(0))),
                     onPressed: () {},
                     child: Text(
                       "Continue with Google",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
+                      style: TextStyle(color: Colors.black, fontSize: 25),
                     ),
                   ),
                 ),
@@ -46,10 +51,17 @@ class Screen10 extends StatelessWidget {
                   margin: EdgeInsets.only(bottom: 20),
                   padding: EdgeInsets.only(left: 20, right: 20),
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xff1877f2),
+                      elevation: 0.0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(0),
+                      ),
+                    ),
                     onPressed: () {},
                     child: Text(
                       "Continue with Facebook",
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(fontSize: 25),
                     ),
                   ),
                 ),
@@ -57,9 +69,12 @@ class Screen10 extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(bottom: 20),
                 child: Text(
-                    "By signin up you're acceptiong our terms and \n conditions",
-                    style: TextStyle(fontWeight: FontWeight.bold,),
-                    textAlign: TextAlign.center,),
+                  "By signin up you're acceptiong our terms and \n conditions",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               )
             ],
           ),
