@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Screen6 extends StatelessWidget {
-  Screen6({super.key});
+  const Screen6({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class Screen6 extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(0))),
             onPressed: () {},
-            child: Text(
+            child: const Text(
               "Click Me",
               style: TextStyle(
                   fontSize: 25,

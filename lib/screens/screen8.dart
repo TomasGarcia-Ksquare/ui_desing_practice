@@ -1,9 +1,7 @@
-import 'dart:html';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen8 extends StatelessWidget {
-  Screen8({super.key});
+  const Screen8({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,16 +13,16 @@ class Screen8 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              margin: EdgeInsets.all(25),
+              margin: const EdgeInsets.all(25),
               color: Colors.black,
-              padding: EdgeInsets.all(10),
-              child: Icon(
+              padding: const EdgeInsets.all(10),
+              child: const Icon(
                 Icons.stay_primary_portrait,
                 color: Colors.white,
                 size: 100,
               ),
             ),
-            Text("APPMAKING.COM", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold))
+            const Text("APPMAKING.COM", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold))
           ],
         ),
       ),

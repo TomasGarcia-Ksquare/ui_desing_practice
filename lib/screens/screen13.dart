@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen13 extends StatelessWidget {
-  Screen13({super.key});
+  const Screen13({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,19 +16,19 @@ class Screen13 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
                     color: Colors.black),
-                child: Icon(
+                child: const Icon(
                   Icons.stay_primary_portrait,
                   color: Colors.white,
                   size: 50,
                 ),
               ),
-              Text("APPMAKING.COM",
+              const Text("APPMAKING.COM",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-              Text(
+              const Text(
                 "Follow us",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),

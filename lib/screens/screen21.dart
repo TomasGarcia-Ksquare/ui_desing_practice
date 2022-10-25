@@ -1,15 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen21 extends StatelessWidget {
   Screen21({super.key});
-
-  List sections = [
-    {"name": "Trending"},
-    {"name": "Popular"},
-    {"name": "Cimputers"},
-    {"name": "Mobiles"},
-  ];
 
   List items = [
     {"name": "Ipod for Sale", "time": "5 mins ago", "price": "\$500"},
@@ -30,12 +22,12 @@ class Screen21 extends StatelessWidget {
         child: Expanded(
           child: Container(
             //color: Colors.orange,
-            margin: EdgeInsets.only(left: 20, right: 20),
+            margin: const EdgeInsets.only(left: 20, right: 20),
             child: Column(
               children: [
                 Container(
                     width: double.infinity,
-                    margin: EdgeInsets.only(top: 10),
+                    margin: const EdgeInsets.only(top: 10),
                     height: 30,
                     //color: Colors.green,
                     child: ListView(
@@ -44,31 +36,31 @@ class Screen21 extends StatelessWidget {
                         Container(
                           width: 100,
                           decoration: BoxDecoration(
-                              color: Color(0xfff4d3d2),
+                              color: const Color(0xfff4d3d2),
                               borderRadius: BorderRadius.circular(10)),
-                          child: Center(child: Text("Trending")),
-                          margin: EdgeInsets.only(right: 10),
+                          child: const Center(child: Text("Trending")),
+                          margin: const EdgeInsets.only(right: 10),
                         ),                        Container(
                           width: 100,
                           decoration: BoxDecoration(
-                              color: Color(0xfff4d3d2),
+                              color: const Color(0xfff4d3d2),
                               borderRadius: BorderRadius.circular(10)),
-                          child: Center(child: Text("Popular")),
-                          margin: EdgeInsets.only(right: 10),
+                          child: const Center(child: Text("Popular")),
+                          margin: const EdgeInsets.only(right: 10),
                         ),                        Container(
                           width: 100,
                           decoration: BoxDecoration(
-                              color: Color(0xfff4d3d2),
+                              color: const Color(0xfff4d3d2),
                               borderRadius: BorderRadius.circular(10)),
-                          child: Center(child: Text("Computers")),
-                          margin: EdgeInsets.only(right: 10),
+                          child: const Center(child: Text("Computers")),
+                          margin: const EdgeInsets.only(right: 10),
                         ),                        Container(
                           width: 100,
                           decoration: BoxDecoration(
-                              color: Color(0xfff4d3d2),
+                              color: const Color(0xfff4d3d2),
                               borderRadius: BorderRadius.circular(10)),
-                          child: Center(child: Text("Mobiles")),
-                          margin: EdgeInsets.only(right: 10),
+                          child: const Center(child: Text("Mobiles")),
+                          margin: const EdgeInsets.only(right: 10),
                         )
                       ],
                     )),
@@ -82,8 +74,8 @@ class Screen21 extends StatelessWidget {
                             color: Colors.grey[300],
                             width: double.infinity,
                             height: 115,
-                            padding: EdgeInsets.all(8),
-                            margin: EdgeInsets.only(top: 12),
+                            padding: const EdgeInsets.all(8),
+                            margin: const EdgeInsets.only(top: 12),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -96,7 +88,7 @@ class Screen21 extends StatelessWidget {
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                                SizedBox(width: 8),
+                                const SizedBox(width: 8),
                                 Expanded(
                                   child: Container(
                                     child: Column(
@@ -107,21 +99,21 @@ class Screen21 extends StatelessWidget {
                                       children: [
                                         Text(
                                           items[index]['name'],
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 18.0,
                                           ),
                                         ),
-                                        SizedBox(height: 4),
+                                        const SizedBox(height: 4),
                                         Text(
                                           items[index]['time'],
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                               fontWeight: FontWeight.bold),
                                         ),
-                                        SizedBox(height: 4),
+                                        const SizedBox(height: 4),
                                         Text(
                                           items[index]['price'],
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                               color: Colors.orange, fontSize: 20),
                                         )
                                       ],

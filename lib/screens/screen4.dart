@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen4 extends StatelessWidget{
-  Screen4({super.key});
+  const Screen4({super.key});
 
   @override
   Widget build(BuildContext context){
@@ -20,7 +19,7 @@ class Screen4 extends StatelessWidget{
               )
             ),
             onPressed: () {},
-            child: Text(
+            child: const Text(
               "Click Me",
               style: TextStyle(fontSize: 18)),
           ),

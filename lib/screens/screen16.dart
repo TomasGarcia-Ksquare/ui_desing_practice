@@ -1,9 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:screens_app/main.dart';
 
 class Screen16 extends StatelessWidget {
-  Screen16({super.key});
+  const Screen16({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,17 +12,17 @@ class Screen16 extends StatelessWidget {
               color: Colors.grey[200], borderRadius: BorderRadius.circular(10)),
           width: double.infinity,
           height: 450,
-          margin: EdgeInsets.all(20),
+          margin: const EdgeInsets.all(20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                margin: EdgeInsets.only(left: 15),
+                margin: const EdgeInsets.only(left: 15),
                 child: Row(
                   children: [
                     Container(
-                      margin: EdgeInsets.only(right: 10),
-                      child: CircleAvatar(
+                      margin: const EdgeInsets.only(right: 10),
+                      child: const CircleAvatar(
                         backgroundImage: NetworkImage(
                             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFiNlKOXgYCIGMdqGj1T5VvQLALr7lLoDzww&usqp=CAU"),
                         radius: 20,
@@ -34,7 +32,7 @@ class Screen16 extends StatelessWidget {
                       child: Container(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          children: const [
                             Text(
                               "AppMaking.com",
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -44,7 +42,7 @@ class Screen16 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Icon(Icons.more_vert),
+                    const Icon(Icons.more_vert),
                   ],
                 ),
               ),
@@ -62,30 +60,30 @@ class Screen16 extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Icon(Icons.favorite_border),
+                        const Icon(Icons.favorite_border),
                         Container(
-                          margin: EdgeInsets.only(left: 5),
-                          child: Text("Like",
+                          margin: const EdgeInsets.only(left: 5),
+                          child: const Text("Like",
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         )
                       ],
                     ),
                     Row(
                       children: [
-                        Icon(Icons.mode_comment_outlined),
+                        const Icon(Icons.mode_comment_outlined),
                         Container(
-                          margin: EdgeInsets.only(left: 5),
-                          child: Text("Comment",
+                          margin: const EdgeInsets.only(left: 5),
+                          child: const Text("Comment",
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         )
                       ],
                     ),
                     Row(
                       children: [
-                        Icon(Icons.share_outlined),
+                        const Icon(Icons.share_outlined),
                         Container(
-                          margin: EdgeInsets.only(left: 5),
-                          child: Text("Share",
+                          margin: const EdgeInsets.only(left: 5),
+                          child: const Text("Share",
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         )
                       ],

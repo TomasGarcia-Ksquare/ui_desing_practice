@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen17 extends StatelessWidget {
@@ -32,29 +31,29 @@ class Screen17 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container( // Icon
-                          padding: EdgeInsets.all(10),
-                          margin: EdgeInsets.only(left: 10),
+                          padding: const EdgeInsets.all(10),
+                          margin: const EdgeInsets.only(left: 10),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(100),
                               color: Colors.black),
-                          child: Icon(
+                          child: const Icon(
                             Icons.stay_primary_portrait,
                             color: Colors.white,
                           )
                         ),
                         Container(
-                          margin: EdgeInsets.only(left: 10),
+                          margin: const EdgeInsets.only(left: 10),
                           //color: Colors.red,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisSize: MainAxisSize.min, //Set the min space of the elements
                             children: [
                               Container(
-                                child: Text("AppMaking.com", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
-                                margin: EdgeInsets.only(bottom: 5),
+                                child: const Text("AppMaking.com", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
+                                margin: const EdgeInsets.only(bottom: 5),
                               ),
                               Container(
-                                child: Text("5 mins ago", style: TextStyle(color: Colors.white),),
+                                child: const Text("5 mins ago", style: TextStyle(color: Colors.white),),
                               )
                             ],
                           ),

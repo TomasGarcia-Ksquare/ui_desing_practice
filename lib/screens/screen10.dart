@@ -1,9 +1,7 @@
-import 'dart:html';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen10 extends StatelessWidget {
-  Screen10({super.key});
+  const Screen10({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +16,7 @@ class Screen10 extends StatelessWidget {
             children: [
               Expanded(
                 child: Container(
-                  margin: EdgeInsets.only(bottom: 20),
+                  margin: const EdgeInsets.only(bottom: 20),
                   child: Image.network(
                       "https://images.unsplash.com/photo-1611416457332-946853cc75d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmlnaHQlMjBjaXR5fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
                       fit: BoxFit.fill),
@@ -28,16 +26,16 @@ class Screen10 extends StatelessWidget {
                 width: double.infinity,
                 height: 70,
                 child: Container(
-                  margin: EdgeInsets.only(bottom: 20),
-                  padding: EdgeInsets.only(left: 20, right: 20),
+                  margin: const EdgeInsets.only(bottom: 20),
+                  padding: const EdgeInsets.only(left: 20, right: 20),
                   child: OutlinedButton(
                     style: OutlinedButton.styleFrom(
-                        side: BorderSide(color: Colors.black),
+                        side: const BorderSide(color: Colors.black),
                         elevation: 0.0,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(0))),
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "Continue with Google",
                       style: TextStyle(color: Colors.black, fontSize: 25),
                     ),
@@ -48,18 +46,18 @@ class Screen10 extends StatelessWidget {
                 width: double.infinity,
                 height: 70,
                 child: Container(
-                  margin: EdgeInsets.only(bottom: 20),
-                  padding: EdgeInsets.only(left: 20, right: 20),
+                  margin: const EdgeInsets.only(bottom: 20),
+                  padding: const EdgeInsets.only(left: 20, right: 20),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xff1877f2),
+                      backgroundColor: const Color(0xff1877f2),
                       elevation: 0.0,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(0),
                       ),
                     ),
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "Continue with Facebook",
                       style: TextStyle(fontSize: 25),
                     ),
@@ -67,8 +65,8 @@ class Screen10 extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(bottom: 20),
-                child: Text(
+                margin: const EdgeInsets.only(bottom: 20),
+                child: const Text(
                   "By signin up you're acceptiong our terms and \n conditions",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,

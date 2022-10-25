@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen20 extends StatelessWidget {
-  Screen20({super.key});
+  const Screen20({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,13 +31,13 @@ class Screen20 extends StatelessWidget {
                       Align(
                         alignment: Alignment.bottomLeft,
                         child: Container(
-                          margin: EdgeInsets.only(left: 10, bottom: 10),
+                          margin: const EdgeInsets.only(left: 10, bottom: 10),
                           decoration: BoxDecoration(
                               color: Colors.yellow[300],
                               borderRadius: BorderRadius.circular(10)),
                           height: 50,
                           width: 100,
-                          child: Center(
+                          child: const Center(
                               child: Text(
                             "5% Off",
                             style: TextStyle(
@@ -49,11 +48,11 @@ class Screen20 extends StatelessWidget {
                       Align(
                         alignment: Alignment.topRight,
                         child: Container(
-                          margin: EdgeInsets.only(right: 10, top: 10),
+                          margin: const EdgeInsets.only(right: 10, top: 10),
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(50)),
-                          child: Icon(
+                          child: const Icon(
                             Icons.favorite_border,
                             size: 40,
                           ),
@@ -63,7 +62,7 @@ class Screen20 extends StatelessWidget {
                   )),
               Expanded(
                 child: Container(
-                  margin: EdgeInsets.all(20),
+                  margin: const EdgeInsets.all(20),
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -75,20 +74,20 @@ class Screen20 extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
-                                    margin: EdgeInsets.only(bottom: 10),
-                                    child: Text(
+                                    margin: const EdgeInsets.only(bottom: 10),
+                                    child: const Text(
                                       "Airpod For Sale",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 30),
                                     ),
                                   ),
-                                  Text("5 mins before",
+                                  const Text("5 mins before",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold))
                                 ],
                               ),
-                              Text(
+                              const Text(
                                 "\$999",
                                 style: TextStyle(
                                     color: Colors.red,
@@ -99,7 +98,7 @@ class Screen20 extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          child: Text(
+                          child: const Text(
                               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                               style: TextStyle(fontSize: 18)),
                         ),
@@ -116,9 +115,9 @@ class Screen20 extends StatelessWidget {
                                     child: OutlinedButton(
                                       style: OutlinedButton.styleFrom(
                                           side:
-                                              BorderSide(color: Colors.blue)),
+                                              const BorderSide(color: Colors.blue)),
                                       onPressed: () {},
-                                      child: Text(
+                                      child: const Text(
                                         "ADD CART",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -133,7 +132,7 @@ class Screen20 extends StatelessWidget {
                                   child: Container(
                                     child: ElevatedButton(
                                       onPressed: () {},
-                                      child: Text(
+                                      child: const Text(
                                         "BUY NOW",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -154,21 +153,3 @@ class Screen20 extends StatelessWidget {
     );
   }
 }
-
-/*
-              SizedBox(
-                width: double.infinity,
-                height: 70,
-                child: Container(
-                  margin: EdgeInsets.only(bottom: 20),
-                  padding: EdgeInsets.only(left: 20, right: 20),
-                  child: OutlinedButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Continue with Google",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                  ),
-                ),
-              ),
-              */

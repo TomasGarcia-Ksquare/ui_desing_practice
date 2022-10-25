@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen5 extends StatelessWidget {
@@ -10,7 +9,7 @@ class Screen5 extends StatelessWidget {
       body: Center(
         child: TextButton(
           onPressed: () {},
-          child: Text(
+          child: const Text(
             "Click Me",
             style: TextStyle(
               fontSize: 25,

@@ -1,6 +1,4 @@
-import 'dart:html';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Screen23 extends StatelessWidget {
@@ -66,7 +64,7 @@ class Screen23 extends StatelessWidget {
           width: double.infinity,
           child: Expanded(
             child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 crossAxisSpacing: 1,
                 mainAxisSpacing: 1,
@@ -76,7 +74,7 @@ class Screen23 extends StatelessWidget {
               itemBuilder: (context, index) {
                 return Container(
                   color: Colors.grey[200],
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: Container(
                       //color: Colors.red,
                       height: 300,
@@ -103,7 +101,7 @@ class Screen23 extends StatelessWidget {
                                     CrossAxisAlignment.center,
                                 children: [
                                   Container(
-                                    margin: EdgeInsets.only(left: 10),
+                                    margin: const EdgeInsets.only(left: 10),
                                     //color: Colors.red,
                                     child: Column(
                                       crossAxisAlignment:
@@ -113,17 +111,17 @@ class Screen23 extends StatelessWidget {
                                       children: [
                                         Container(
                                           child: Text(items[index]['name'],
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                   fontWeight:
                                                       FontWeight.bold,
                                                   color: Colors.white)),
                                           margin:
-                                              EdgeInsets.only(bottom: 5),
+                                              const EdgeInsets.only(bottom: 5),
                                         ),
                                         Container(
                                           child: Text(
                                             items[index]['price'],
-                                            style: TextStyle(
+                                            style: const TextStyle(
                                                 color: Colors.white),
                                           ),
                                         )
@@ -137,11 +135,11 @@ class Screen23 extends StatelessWidget {
                           Align(
                             alignment: Alignment.topRight,
                             child: Container(
-                              margin: EdgeInsets.only(right: 10, top: 10),
+                              margin: const EdgeInsets.only(right: 10, top: 10),
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(50)),
-                              child: Icon(
+                              child: const Icon(
                                 Icons.favorite_border,
                                 size: 30,
                               ),
